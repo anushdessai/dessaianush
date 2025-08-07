@@ -1,0 +1,18 @@
+<html>
+<body>
+<h2>Javascript for In Loop</h2>
+<p>calls a function once for each array element:</p>
+<p id="demo"></p>
+<script>
+const numbers = [4,14,2,19,3];
+let txt = "";
+numbers.forEach(myFunction);
+document.getElementById("demo").innerHTML= txt;
+function myFunction(value, index, array) {
+txt += value + "<br>";
+}
+</script>
+</body>
+</html>
+
+

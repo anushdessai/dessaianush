@@ -1,0 +1,20 @@
+<html>
+<body>
+<h1>JavaScript <i>this</i> keyword</h1>
+<p>in this example, <b> this </b> refers to the <b> person </b> object.</p
+<p>You can use person.property or person["property"].</p>
+<p id="demo"></p>
+<script>
+const person = {
+firstName: "mithilesh",
+lastName:"shaikh",
+fullName: function() {
+return this.firstName + " " + this.lastName;
+}
+};
+document.getElementById("demo").innerHTML= person.fullName();
+</script>
+</body>
+</html>
+
+
