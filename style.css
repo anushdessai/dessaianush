@@ -1,5 +1,104 @@
-body{background-color:red;font-family:arial}
-a:link{color:blue}
-a:visited{color:yellow}
-a:hover{color:red}
-a:active{color:white}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #222831;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #eeeeee;
+}
+
+.calculator {
+  background-color: #393e46;
+  padding: 20px;
+  border-radius: 15px;
+  width: 320px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+}
+
+.display {
+  background: #222831;
+  height: 50px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 28px;
+  text-align: right;
+  overflow-x: auto;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.button-row {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.btn {
+  flex: 1;
+  margin: 0 6px;
+  background-color: #00adb5;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  height: 50px;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.btn:first-child {
+  margin-left: 0;
+}
+
+.btn:last-child {
+  margin-right: 0;
+}
+
+.btn:hover {
+  background-color: #028f97;
+}
+
+.btn.operator {
+  background-color: #ff5722;
+}
+
+.btn.operator:hover {
+  background-color: #e64a19;
+}
+
+.btn.clear {
+  background-color: #ff3b3b;
+}
+
+.btn.clear:hover {
+  background-color: #cc2e2e;
+}
+
+.btn.calculate {
+  background-color: #4caf50;
+}
+
+.btn.calculate:hover {
+  background-color: #388e3c;
+}
+
+.btn.zero {
+  flex: 2;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 22px;
+  min-height: 28px;
+  text-align: center;
+  color: #ffd369;
+  font-weight: 700;
+}

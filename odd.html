@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Odd Numbers from 1 to 200</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h1 {
+      color: #d9534f;
+    }
+    p {
+      font-size: 1.1em;
+      line-height: 1.5;
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Odd Numbers from 1 to 200</h1>
+  <p id="oddNumbers"></p>
+
+  <script>
+    const oddNumbersElem = document.getElementById('oddNumbers');
+    let oddNumbers = [];
+
+    for (let i = 1; i <= 200; i++) {
+      if (i % 2 !== 0) {
+        oddNumbers.push(i);
+      }
+    }
+
+    oddNumbersElem.textContent = oddNumbers.join(', ');
+  </script>
+</body>
+</html>
